@@ -5,7 +5,6 @@ const PORT = 5000
 const graphqlRouter = require('./routes/router-graphql')
 const swGraphQLRouter = require('./routes/router-sw-graphql')
 
-app.use(express.static('public/'))
 app.use('/graphql',graphqlRouter)
 app.use('/sw-graphql',swGraphQLRouter)
 
