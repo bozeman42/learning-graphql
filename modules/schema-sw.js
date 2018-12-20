@@ -48,7 +48,7 @@ const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
     fields: {
-      people: {
+      characters: {
         type: PeopleType,
         args: {
           id: { type: GraphQLInt }
@@ -65,7 +65,7 @@ const schema = new GraphQLSchema({
 })
 
 const root = {
-  people: async ({ id }) => {
+  characters: async ({ id }) => {
     if (id === undefined) {
       id = 1
     }
