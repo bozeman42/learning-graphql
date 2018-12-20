@@ -5,6 +5,9 @@
   "main": "server.js",
   "author": "Aaron Kvarnlov-Leverty <bozeman42@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.4",
