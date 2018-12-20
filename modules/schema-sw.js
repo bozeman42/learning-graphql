@@ -47,7 +47,7 @@ const PlanetType = new GraphQLObjectType({
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
     name: 'Query',
-    fields: () => ({
+    fields: {
       people: {
         type: PeopleType,
         args: {
@@ -60,7 +60,7 @@ const schema = new GraphQLSchema({
           id: { type: GraphQLInt }
         }
       }
-    })
+    }
   })
 })
 
